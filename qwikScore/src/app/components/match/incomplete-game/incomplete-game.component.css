@@ -1,0 +1,60 @@
+#incompleteHeader {
+    width: 100%;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    margin-bottom: 0px;
+
+    background-color: #0db9f0;
+    border: 1px solid #ffd740; 
+
+}
+
+.incompleteBody {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:  10px;
+    font-size: 15px;
+}
+
+button:focus {
+    outline:none;
+}
+
+img {
+    background: white;
+    border: solid 2px #ffd740;
+    border-radius: 10px; 
+}
+
+#incompleteTips {
+    text-align: center;
+}
+
+#tipSources { 
+    margin: 0
+}
+
+.btn-link {
+    color: skyblue;
+    font-size: 1vw;
+}
+
+#lower {
+    padding-top: 10px; 
+}
+
+#confMargin {
+    font-size: 4vw;
+    font-weight: bolder;
+}
+#smallHeading {
+    color: skyblue;
+    font-size: 1vw;
+}
+button:focus {
+    outline: white;
+}

@@ -1,0 +1,9 @@
+#footer {
+    border-top: solid 1px;
+    width: 80%;
+    margin: auto;
+    border-color: deepskyblue;
+}
+#copy {
+    font-size: 80%;
+}

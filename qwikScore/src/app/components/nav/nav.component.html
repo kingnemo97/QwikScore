@@ -1,0 +1,22 @@
+<div class="container-fluid py-3 mt-1">
+  <div class="row text-center px-2">
+      <div class="col-sm-5 startRound item px-3">
+          <p class="h4">Starting round</p>
+          <ng5-slider [(ngModel)]="startRound" [options]="options" (click)="dataChanged($event)"></ng5-slider>
+      </div>
+      <div class="col-sm-2 px-2">
+          <div class="container item">
+          <p class="h4">Year</p>
+          <mat-radio-group aria-label="Select a year" [(ngModel)]="year" (ngModelChange)="dataChanged($event)">
+            <mat-radio-button class="radioButton" value="2017">2017</mat-radio-button>
+            <mat-radio-button class="radioButton" value="2018">2018</mat-radio-button>
+            <mat-radio-button class="radioButton" value="2019">2019</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+      <div class="col-sm-5 endRound item px-3">
+          <p class="h4">Ending round</p>
+          <ng5-slider [(ngModel)]="endRound" [options]="options" (click)="dataChanged($event)"></ng5-slider>
+      </div>
+  </div>
+</div>

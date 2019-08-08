@@ -1,0 +1,61 @@
+<div>
+
+  <table>
+  
+  <tr><th>Team</th><th>Logo</th></tr>
+  
+
+  <tr *ngFor="let team of teams">
+
+    <td>{{team.name}}</td>
+    <td><img src="{{team.logo}}"></td>
+
+
+  </tr>
+
+  
+
+</table>
+  
+  </div>
+
+    <div>
+        <table style="text-align: center;">
+  
+            <tr><th>Home Team</th><th>Away Team</th><th>Score</th><th>Winner</th></tr>
+            
+          
+            <tr *ngFor="let game of games">
+          
+              <td>{{game.hteam}}</td>
+              <td>{{game.ateam}}</td>
+              <td>{{game.hscore}}-{{game.ascore}}</td>
+              <td>{{game.winner}}</td>
+          
+          
+            </tr>
+          
+            
+          
+          </table>
+    </div>
+
+    <div>
+      <table style="text-align: center;">
+
+          <tr><th>Home Team</th><th>Away Team</th><th>Tip</th><th>Source</th></tr>
+          
+        
+          <tr *ngFor="let t of tips">
+        
+            <td>{{t.hteam}}</td>
+            <td>{{t.ateam}}</td>
+            <td>{{t.tip}}</td>
+            <td>{{t.source}}</td>   
+        
+          </tr>
+        
+          
+        
+        </table>
+  </div>

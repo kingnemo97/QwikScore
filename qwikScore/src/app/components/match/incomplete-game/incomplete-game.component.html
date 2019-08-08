@@ -1,0 +1,71 @@
+<div class="container-fluid">
+  <div class="text-center mb-3">
+    <button id="incompleteHeader" data-toggle="collapse" [attr.data-target]="'#incompleteBody'+ index">
+      <div class="row">
+        <div class="col-sm-4">
+          {{IncompleteGame.hTeam}}
+        </div>
+        <div class="col-sm-4">
+          Round {{IncompleteGame.round}}
+        </div>
+        <div class="col-sm-4">
+          {{IncompleteGame.aTeam}}
+        </div>
+      </div>
+    </button>
+    <div id="incompleteBody{{index}}" class="collapse incompleteBody">
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="../../../../assets/Images/logo{{IncompleteGame.hTeamId}}.png" class="img-thumbnail" width="150px"
+            height="150px">
+        </div>
+        <div class="col-sm-4" id="confMargin">
+          <div class="row">
+            <div class="col-sm-6">
+              <p id="smallHeading">Confidence:</p>
+              {{IncompleteGame.confidence | number: '0.0-0'}}
+            </div>
+            <div class="col-sm-6">
+              <p id="smallHeading">Margin:</p>
+              {{IncompleteGame.margin | number: '0.0-0'}}
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <img src="../../../../assets/Images/logo{{IncompleteGame.aTeamId}}.png" class="img-thumbnail" width="150px"
+            height="150px">
+        </div>
+      </div>
+      <div class="row" id="lower">
+        <div class="col-sm-4">
+          Date: {{IncompleteGame.date | slice:0:10}}
+        </div>
+        <div class="col-sm-4">
+          Tipped Winner: {{IncompleteGame.tip | uppercase}} via {{IncompleteGame.source}}<br>
+          <button type="button" id="tipSources" class="btn btn-link btn-xs" data-toggle="collapse"
+            data-target="#incompleteTips">More Tips</button>
+        </div>
+        <div class="col-sm-4">
+          Venue: {{IncompleteGame.venue}}
+        </div>
+        <div id="incompleteTips" class="col-sm-12 collapse table-responsive">
+          <table class="table">
+            <tr>
+              <th>Source</th>
+              <th>Tip</th>
+              <th>Confidence</th>
+              <th>Margin</th>
+            </tr>
+            <tr *ngFor="let tip of IncompleteGame.secondryTips">
+              <td>{{tip.source}}</td>
+              <td>{{tip.tipName}}</td>
+              <td>{{tip.confidence | number: '0.0-0'}}</td>
+              <td>{{tip.margin | number: '0.0-0'}}</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

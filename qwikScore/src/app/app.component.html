@@ -1,0 +1,38 @@
+<!-- <app-view-league-table></app-view-league-table> -->
+<div class="container-fluid bg">
+
+<app-header></app-header>
+
+<app-nav (emitter)="data=$event"></app-nav>
+
+<div class="row text-center mt-5 px-5 mx-0">
+    <div class="col-sm-2">
+        <div class="container teamSelector">
+            <p class="h4">Team 1</p>
+            <app-team-one-selector (emitter)="team1=$event"></app-team-one-selector>
+        </div>
+    </div>
+    <div class="col-sm-8 border rounded px-0">
+            <app-match [team1]="team1" [team2]="team2" [data]="data"></app-match>
+    </div>
+    <div class="col-sm-2">
+        <div class="container teamSelector">
+            <p class="h4">Team 2</p>
+            <app-team-two-selector (emitter)="team2=$event"></app-team-two-selector>
+        </div>
+    </div>
+</div>
+
+<div class="row ladders pt-5">
+    <div class="col-sm-6">
+     <app-current-ladder></app-current-ladder>
+    </div>
+    <div class="col-sm-6">
+     <app-predicted-ladder></app-predicted-ladder>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+</div>
+

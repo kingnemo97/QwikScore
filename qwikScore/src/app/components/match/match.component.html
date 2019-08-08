@@ -1,0 +1,16 @@
+<!-- <div class="row">
+  <div class="col-sm-12">
+
+  </div>
+</div> -->
+<!--<button (click)="func()">button</button>-->
+
+<ul>
+    <li *ngFor="let game of gameDetailsComplete; let i = index ">
+      <app-complete-game [index]="i" [CompleteGame]="game"></app-complete-game>
+    </li>
+    <li *ngFor="let game of gameDetailsTips; let j = index ">
+      <app-incomplete-game [index]="j" [IncompleteGame]="game"></app-incomplete-game>
+    </li>
+  </ul>
+

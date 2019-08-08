@@ -1,0 +1,24 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    border: solid 0px;
+    background-color: white;
+}
+
+.row {
+    border: solid 0px;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid {
+    border: solid 0px;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}

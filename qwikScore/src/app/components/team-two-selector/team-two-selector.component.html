@@ -1,0 +1,49 @@
+<div id="carouselExampleIndicators-2" data-interval="false" class="carousel slide" data-ride="carousel">
+    <a class="carousel-control-prev" href="#carouselExampleIndicators-2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators-2" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+  
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators-2" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators-2" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators-2" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators-2" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators-2" data-slide-to="4"></li>
+   </ol>
+   <div class="carousel-inner">
+        <div class="carousel-item active">
+                <!-- class="buttonSelected" -->
+                              
+        
+                <button class="item" [ngClass]="selectedTeam == 1  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 1; onClick()"><img src="../../../assets/Images/logo1.png" class="img-custom img-thumbnail border-0" alt="responsive image"></button>
+                <button class="item" [ngClass]="selectedTeam == 2  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 2; onClick()"> <img src="../../../assets/Images/logo2.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 3  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 3; onClick()"> <img src="../../../assets/Images/logo3.png" class="img-custom img-thumbnail img-fluid border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 4  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 4; onClick()"> <img src="../../../assets/Images/logo4.png" class="img-custom img-thumbnail img-fluid border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 5  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 5; onClick()"> <img src="../../../assets/Images/logo5.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button> 
+            </div>
+            <div class="carousel-item">
+                <button class="item" [ngClass]="selectedTeam == 6  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 6; onClick()"> <img src="../../../assets/Images/logo6.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 7  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 7; onClick()"> <img src="../../../assets/Images/logo7.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 8  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 8; onClick()"> <img src="../../../assets/Images/logo8.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 9  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 9; onClick()"> <img src="../../../assets/Images/logo9.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 10  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 10; onClick()"> <img src="../../../assets/Images/logo10.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>  
+            </div> 
+            <div class="carousel-item">
+                <button class="item" [ngClass]="selectedTeam == 11  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 11; onClick()"> <img src="../../../assets/Images/logo11.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 12 ? 'buttonSelected' : 'none'" (click)="selectedTeam = 12; onClick()"> <img src="../../../assets/Images/logo12.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 13  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 13; onClick()"> <img src="../../../assets/Images/logo13.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 14  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 14; onClick()"> <img src="../../../assets/Images/logo14.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 15  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 15; onClick()"> <img src="../../../assets/Images/logo15.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+            </div>
+            <div class="carousel-item">
+                <button class="item" [ngClass]="selectedTeam == 16  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 16; onClick()"> <img src="../../../assets/Images/logo16.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 17  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 17; onClick()"> <img src="../../../assets/Images/logo17.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+                <button class="item" [ngClass]="selectedTeam == 18  ? 'buttonSelected' : 'none'" (click)="selectedTeam = 18; onClick()"> <img src="../../../assets/Images/logo18.png" class="img-custom img-thumbnail border-0" alt="responsive image"> </button>
+            </div>  
+            </div> 
+      </div>

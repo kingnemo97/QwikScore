@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <div class="text-center mb-3">
+        <button id="completeHeader" data-toggle="collapse"  [attr.data-target]="'#completeBody'+ index">
+          <div class="row mx-0">
+            <div class="col-sm-5"> {{CompleteGame.hTeam}}</div>
+            <div class="col-sm-2"> Round {{CompleteGame.round}}</div> 
+            <div class="col-sm-5"> {{CompleteGame.aTeam}} </div>
+          </div>
+        </button>
+          <div id="completeBody{{index}}" class="collapse completeBody">
+              <div class="row">
+                  <div class="col-sm-4">
+                    Goals: <p class="smallHeading">{{CompleteGame.hGoals}}</p>
+                    Behinds: <p class="smallHeading">{{CompleteGame.hBehinds}}</p>
+                    Total: <p class="smallHeading">{{CompleteGame.hScore}}</p>
+                  </div>
+                  <div class="col-sm-4">
+                    <img src="../../../../assets/Images/logo{{CompleteGame.winnerTeamId}}.png" class="img-thumbnail" width="150px" height="150px">
+                  </div>
+                  <div class="col-sm-4">
+                    Goals: <p class="smallHeading">{{CompleteGame.aGoals}}</p>
+                    Behinds: <p class="smallHeading">{{CompleteGame.aBehinds}}</p>
+                    Total: <p class="smallHeading">{{CompleteGame.aScore}}</p>
+                  </div>
+                </div>
+                <div class="row">
+                      <div class="col-sm-4">
+                        Date: {{CompleteGame.date | slice:0:10}}
+                      </div>
+                      <div class="col-sm-4">
+                        Winner: {{CompleteGame.winner | uppercase}}
+                      </div>
+                      <div class="col-sm-4">
+                        Venue: {{CompleteGame.venue}}
+                      </div>
+              </div>
+        </div>
+  </div>
+</div>

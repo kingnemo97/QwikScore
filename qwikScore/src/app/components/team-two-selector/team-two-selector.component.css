@@ -1,0 +1,56 @@
+#carouselExampleIndicators-2 {
+    height: 600px;
+ }
+ 
+ .img-custom {
+     height: 100px;
+     width: 130px;
+ }  
+
+button {
+    border: 1px solid #0db9f0;
+    border-radius: 10px; 
+}
+button:hover {
+	border: 1px solid red; 
+}
+
+button:focus {
+  outline:none;
+}
+
+.buttonSelected {
+  border: 1px solid red;
+}
+
+.none {
+border: 1px solid #0db9f0;
+}
+
+.item{
+    margin: 5px;
+    /* background-color: rgb(240, 244, 247); */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: black;
+}
